@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #020617);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h2 {
+    color: #38bdf8;
+    margin: 10px 0;
+}
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+.cv-btn i {
+    margin-right: 10px;
+}
+
+.cv-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 35px rgba(56, 189, 248, 0.9);
+}
+
+
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* ABOUT */
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #38bdf8;
+}
+
+/* PROJECTS */
+.project-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: #020617;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.project-card img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* CONTACT */
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+}
+
+/* ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: #38bdf8;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #38bdf8;
+}
+
+.timeline-item {
+    display: flex;
+    margin: 40px 0;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.timeline-content {
+    width: 45%;
+    background: #020617;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    background: #38bdf8;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+.light-mode {
+    background: #f8fafc;
+    color: #020617;
+}
+
+.light-mode .navbar {
+    background: rgba(248, 250, 252, 0.95);
+}
+
+.light-mode .skill-card,
+.light-mode .project-card,
+.light-mode .timeline-content {
+    background: #e5e7eb;
+}
+
+
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 992px) {
+
+    section {
+        padding: 80px 5%;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 8%;
+        flex-direction: column;
+        background: #020617;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-dot {
+        left: 10px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.7s ease;
+}
+
+.scale-in.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+
+.nav-links a.active {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+}
+
+
+.nav-links a {
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #38bdf8;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    transform: translateY(-3px);
+}
