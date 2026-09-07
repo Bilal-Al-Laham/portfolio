@@ -1,46 +1,126 @@
-// REVEAL ANIMATIONS
-const observer = new IntersectionObserver(entries => {
+/* ================= REVEAL ANIMATIONS ================= */
+
+const observer = new IntersectionObserver(
+  (entries) => {
     entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-            setTimeout(() => { entry.target.classList.add("active"); }, index * 120);
-        }
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("active");
+        }, index * 100);
+
+        observer.unobserve(entry.target);
+      }
     });
-}, { threshold: 0.2 });
-document.querySelectorAll(".fade-up, .scale-in").forEach(el => observer.observe(el));
+  },
+  {
+    threshold: 0.15,
+  },
+);
 
-// NAVBAR MOBILE MENU
-document.querySelector(".menu-btn").onclick = () => {
-    document.querySelector(".nav-links").classList.toggle("active");
-};
+document
+  .querySelectorAll(".fade-up, .scale-in")
+  .forEach((element) => observer.observe(element));
 
-// THEME TOGGLE
-const toggle = document.getElementById("theme-toggle");
-toggle.addEventListener("click", () => {
+/* ================= MOBILE MENU ================= */
+
+const menuButton = document.querySelector(".menu-btn");
+const navLinksContainer = document.querySelector(".nav-links");
+
+if (menuButton) {
+  menuButton.addEventListener("click", () => {
+    navLinksContainer.classList.toggle("active");
+
+    const isOpen = navLinksContainer.classList.contains("active");
+
+    menuButton.classList.toggle("fa-bars", !isOpen);
+    menuButton.classList.toggle("fa-xmark", isOpen);
+  });
+}
+
+/* ================= THEME TOGGLE ================= */
+
+const themeToggle = document.getElementById("theme-toggle");
+
+const savedTheme = localStorage.getItem("portfolio-theme");
+
+if (savedTheme === "light") {
+  document.body.classList.add("light-mode");
+  themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
-    toggle.innerHTML = document.body.classList.contains("light-mode") ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-});
 
-// SCROLL SPY + OFFSET + SMOOTH SCROLL
-const sections = document.querySelectorAll("section");
+    const isLight = document.body.classList.contains("light-mode");
+
+    themeToggle.innerHTML = isLight
+      ? '<i class="fa-solid fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
+
+    localStorage.setItem("portfolio-theme", isLight ? "light" : "dark");
+  });
+}
+
+/* ================= SCROLL SPY ================= */
+
+const sections = document.querySelectorAll("header[id], section[id]");
+
 const navLinks = document.querySelectorAll(".nav-links a");
 
-function getNavOffset() { return document.querySelector(".navbar").offsetHeight + 10; }
-
 function updateActiveLink() {
-    let scrollPos = window.scrollY + window.innerHeight / 2;
-    let current = "";
-    sections.forEach(section => { if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) current = section.getAttribute("id"); });
-    navLinks.forEach(link => { link.classList.remove("active"); if (link.getAttribute("href") === `#${current}`) link.classList.add("active"); });
+  const scrollPosition = window.scrollY + window.innerHeight * 0.35;
+
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      currentSection = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.classList.add("active");
+    }
+  });
 }
+
 window.addEventListener("scroll", updateActiveLink);
+
 window.addEventListener("load", updateActiveLink);
 
-navLinks.forEach(link => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        const offset = getNavOffset();
-        window.scrollTo({ top: target.offsetTop - offset, behavior: "smooth" });
-        document.querySelector(".nav-links").classList.remove("active");
+/* ================= SMOOTH NAVIGATION ================= */
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    const targetId = this.getAttribute("href");
+
+    const target = document.querySelector(targetId);
+
+    if (!target) return;
+
+    event.preventDefault();
+
+    const navbar = document.querySelector(".navbar");
+
+    const offset = navbar.offsetHeight + 10;
+
+    window.scrollTo({
+      top: target.offsetTop - offset,
+      behavior: "smooth",
     });
+
+    navLinksContainer.classList.remove("active");
+
+    if (menuButton) {
+      menuButton.classList.remove("fa-xmark");
+      menuButton.classList.add("fa-bars");
+    }
+  });
 });

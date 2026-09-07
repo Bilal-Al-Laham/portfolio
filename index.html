@@ -1,178 +1,890 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Bilal Allaham | Laravel Backend Developer</title>
-    <meta name="description" content="Bilal Allaham - Laravel Backend Developer specializing in REST APIs, MySQL, and scalable backend systems.">
-    <meta name="keywords" content="Laravel Developer, Backend Developer, PHP, REST API, MySQL, Software Engineer">
-    <meta name="author" content="Bilal Allaham">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Bilal Allaham | Laravel Backend Developer">
-    <meta property="og:description" content="Professional Laravel Backend Developer portfolio with real-world projects.">
+
+    <title>Bilal Al-Laham | Software Engineer & Backend Developer</title>
+
+    <meta name="description"
+        content="Bilal Al-Laham - Software Engineer and Backend Developer specializing in Laravel, PHP, NestJS, REST APIs, databases, system analysis, and enterprise software development.">
+
+    <meta name="keywords"
+        content="Bilal Al-Laham, Software Engineer, Backend Developer, Laravel Developer, PHP Developer, NestJS, REST API, MySQL, PostgreSQL, Odoo, Software Engineering">
+
+    <meta name="author" content="Bilal Al-Laham">
+
+    <meta property="og:title" content="Bilal Al-Laham | Software Engineer & Backend Developer">
+    <meta property="og:description"
+        content="Software Engineer and Backend Developer specializing in Laravel, PHP, NestJS, REST APIs, databases, and enterprise software systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bilal-al-laham.github.io">
     <meta property="og:image" content="images/profile.jpg">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <h3 class="logo">Bilal</h3>
+    <!-- ================= NAVBAR ================= -->
 
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <nav class="navbar">
 
-    <i class="fa-solid fa-bars menu-btn"></i>
-    <button id="theme-toggle">
-        <i class="fa-solid fa-moon"></i>
-    </button>
-</nav>
 
-<!-- HERO -->
-<header class="hero">
-    <div class="hero-content fade-up">
-        <img src="images/profile.jpg" class="profile-img" alt="Bilal Allaham">
-        <h1>Bilal Allaham</h1>
-        <h2>Laravel Backend Developer</h2>
-        <p class="hero-desc">
-            Junior Laravel Developer with 2+ year of experience in building scalable, secure, and maintainable backend systems.
+        <a href="#home" class="logo">Bilal<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <i class="fa-solid fa-bars menu-btn"></i>
+
+        </div>
+
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <header id="home" class="hero">
+
+
+        <div class="hero-content fade-up">
+
+            <div class="profile-wrapper">
+                <img src="images/profile.jpg" class="profile-img" alt="Bilal Al-Laham">
+            </div>
+
+            <p class="hero-label">
+                SOFTWARE ENGINEER • BACKEND DEVELOPER
+            </p>
+
+            <h1>
+                Bilal <span>Al-Laham</span>
+            </h1>
+
+            <h2>
+                Building reliable backend systems & scalable APIs
+            </h2>
+
+            <p class="hero-desc">
+                Software Engineering student and Backend Developer with 2+ years
+                of experience building enterprise web applications, RESTful APIs,
+                database-driven systems, and business solutions using Laravel,
+                PHP, MySQL, and NestJS.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="cv/Bilal_Allaham_CV.pdf" download class="cv-btn primary-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Download CV
+                </a>
+
+                <a href="#projects" class="cv-btn secondary-btn">
+                    <i class="fa-solid fa-code"></i>
+                    View Projects
+                </a>
+
+            </div>
+
+            <div class="hero-socials">
+
+                <a href="https://linkedin.com/in/bilal-allaham" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/Bilal-Al-Laham" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://gitlab.com/Bilal_Allaham" target="_blank" aria-label="GitLab">
+                    <i class="fa-brands fa-gitlab"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about section-container fade-up">
+
+
+        <div class="section-heading">
+            <span>01</span>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>
+                    Software Engineer focused on backend development
+                </h3>
+
+                <p>
+                    I am a Software Engineering student and Backend Developer
+                    with 2+ years of experience in Laravel, PHP, MySQL,
+                    RESTful APIs, and enterprise software development.
+                </p>
+
+                <p>
+                    My experience includes backend architecture, database design,
+                    systems analysis, requirements engineering, business process
+                    analysis, software testing, and quality assurance.
+                </p>
+
+                <p>
+                    I enjoy transforming business requirements into maintainable
+                    software solutions while following OOP, SOLID principles,
+                    design patterns, and clean architecture practices.
+                </p>
+
+            </div>
+
+            <div class="about-highlights">
+
+                <div class="highlight-card scale-in">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>Laravel, PHP, NestJS & REST APIs</p>
+                </div>
+
+                <div class="highlight-card scale-in">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>MySQL & PostgreSQL</p>
+                </div>
+
+                <div class="highlight-card scale-in">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>System Analysis</h3>
+                    <p>Requirements, workflows & architecture</p>
+                </div>
+
+                <div class="highlight-card scale-in">
+                    <i class="fa-solid fa-vial-circle-check"></i>
+                    <h3>QA & Testing</h3>
+                    <p>Functional testing, test cases & bug tracking</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills section-container fade-up">
+
+
+        <div class="section-heading">
+            <span>02</span>
+            <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-code"></i>
+                <h3>Backend Development</h3>
+                <p>
+                    Laravel, PHP, NestJS, REST APIs
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+                <p>
+                    MySQL, PostgreSQL, Database Design & Optimization
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-gears"></i>
+                <h3>Software Engineering</h3>
+                <p>
+                    OOP, SOLID, Design Patterns, MVC, Layered Architecture
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>Systems Analysis</h3>
+                <p>
+                    Requirements Engineering, Business Process Analysis,
+                    SRS & System Workflows
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-vial"></i>
+                <h3>Testing & QA</h3>
+                <p>
+                    Functional Testing, Test Cases, Bug Tracking & QA
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Frontend</h3>
+                <p>
+                    JavaScript, jQuery, TypeScript, Bootstrap, Blade
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-toolbox"></i>
+                <h3>Tools</h3>
+                <p>
+                    Git, GitHub, GitLab, Jira
+                </p>
+            </div>
+
+            <div class="skill-card scale-in">
+                <i class="fa-solid fa-building"></i>
+                <h3>ERP & Business Systems</h3>
+                <p>
+                    Odoo ERP, PostgreSQL, Business Process Analysis
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="timeline-section fade-up">
+
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span>03</span>
+                <h2>Experience</h2>
+            </div>
+
+            <div class="timeline">
+
+                <!-- JoyBox -->
+
+                <div class="timeline-item scale-in">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            2025 – Present
+                        </span>
+
+                        <h3>
+                            Software Engineer | Backend Developer |
+                            Systems Analyst & QA Engineer
+                        </h3>
+
+                        <h4>
+                            JoyBox
+                        </h4>
+
+                        <ul>
+                            <li>
+                                Develop and maintain enterprise web applications
+                                and backend services using Laravel, PHP and MySQL.
+                            </li>
+
+                            <li>
+                                Participate in systems analysis, requirements
+                                gathering and business process analysis.
+                            </li>
+
+                            <li>
+                                Design and maintain RESTful APIs, database schemas,
+                                business logic and reporting modules.
+                            </li>
+
+                            <li>
+                                Develop dynamic reporting and assessment systems
+                                for the Maqayees platform using Laravel Blade.
+                            </li>
+
+                            <li>
+                                Optimize database performance and improve data
+                                integrity and scalability.
+                            </li>
+
+                            <li>
+                                Support quality management and verify compliance
+                                with functional and technical requirements.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Zahi ERP</span>
+                            <span>Aalamy</span>
+                            <span>Maqayees</span>
+                            <span>CentralTest</span>
+                            <span>Manazel Al-Abrar</span>
+                            <span>Medicine Reader</span>
+                            <span>Riyad Al-Saliheen</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Freelance -->
+
+                <div class="timeline-item scale-in">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            September 2025
+                        </span>
+
+                        <h3>
+                            Laravel Developer — Freelance
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Developed backend architecture and business logic
+                                for an electronic payment platform.
+                            </li>
+
+                            <li>
+                                Designed secure RESTful APIs and database structures
+                                using Laravel and MySQL.
+                            </li>
+
+                            <li>
+                                Integrated PayPal and Mollie payment gateways.
+                            </li>
+
+                            <li>
+                                Developed product catalog, shopping cart,
+                                order management and payment processing modules.
+                            </li>
+
+                            <li>
+                                Built responsive interfaces using Laravel Blade
+                                and Bootstrap.
+                            </li>
+
+                            <li>
+                                Collaborated using GitLab and Agile development
+                                practices.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>PayPal</span>
+                            <span>Mollie</span>
+                            <span>REST API</span>
+                            <span>GitLab</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- No Code -->
+
+                <div class="timeline-item scale-in">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            2026 · Academic / Analysis Project
+                        </span>
+
+                        <h3>
+                            No-Code SaaS & CRM Builder Platform
+                        </h3>
+
+                        <p>
+                            Contributed to the analysis and design of a
+                            multi-tenant No-Code SaaS platform.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Designed functional requirements, use cases,
+                                permission matrices and system workflows.
+                            </li>
+
+                            <li>
+                                Contributed to a dynamic application builder
+                                supporting custom data models, workflows,
+                                pages, CRM modules and automation rules.
+                            </li>
+
+                            <li>
+                                Participated in defining scalable architecture
+                                using NestJS, PostgreSQL, Redis queues,
+                                event-driven architecture and multi-tenancy.
+                            </li>
+
+                            <li>
+                                Produced technical documentation including
+                                Use Case, Activity, Sequence and ERD diagrams.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>NestJS</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>JWT</span>
+                            <span>Multi-Tenant</span>
+                            <span>Event-Driven</span>
+                            <span>Stripe</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tafawuq -->
+
+                <div class="timeline-item scale-in">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            2025
+                        </span>
+
+                        <h3>
+                            Laravel Backend Developer —
+                            Tafawuq School Institute System
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Developed an educational management system
+                                supporting academic, administrative and
+                                financial operations.
+                            </li>
+
+                            <li>
+                                Designed scalable RESTful APIs using Laravel
+                                with SOLID principles and layered architecture.
+                            </li>
+
+                            <li>
+                                Implemented DTOs, Services, Repositories,
+                                Actions, Policies and Traits.
+                            </li>
+
+                            <li>
+                                Developed student management, attendance,
+                                examinations, grading, courses, reporting
+                                and document management modules.
+                            </li>
+
+                            <li>
+                                Implemented role-based access control using
+                                Spatie Laravel Permissions.
+                            </li>
+
+                            <li>
+                                Developed SMS and in-app notification services.
+                            </li>
+
+                            <li>
+                                Optimized database structures and backend
+                                performance within a Scrum team.
+                            </li>
+
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>REST API</span>
+                            <span>MySQL</span>
+                            <span>Spatie</span>
+                            <span>DTO</span>
+                            <span>Services</span>
+                            <span>Repositories</span>
+                            <span>Jira</span>
+                            <span>GitLab</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects section-container fade-up">
+
+
+        <div class="section-heading">
+            <span>04</span>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Events -->
+
+            <article class="project-card scale-in">
+
+                <div class="project-image">
+                    <img src="images/project1.png" alt="Events Management System">
+
+                    <div class="project-overlay">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        Backend / Management System
+                    </span>
+
+                    <h3>
+                        Events Management System
+                    </h3>
+
+                    <p>
+                        Management platform covering event booking,
+                        budgets, vendors and role management.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                    </div>
+
+                    <a href="https://github.com/Bilal-Al-Laham/Events_Management_System.git" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- School -->
+
+            <article class="project-card scale-in">
+
+                <div class="project-image">
+                    <img src="images/project2.png" alt="School Management System">
+
+                    <div class="project-overlay">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        Laravel / Education
+                    </span>
+
+                    <h3>
+                        School Management System
+                    </h3>
+
+                    <p>
+                        Laravel-based educational management system
+                        for students, examinations, scheduling and
+                        fee management.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                        <span>GitHub</span>
+                    </div>
+
+                    <a href="https://github.com/Bilal-Al-Laham/Schools_Management_System.git" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        View on GitHub
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Angular Compiler -->
+
+            <article class="project-card scale-in">
+
+                <div class="project-image project-placeholder">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        Software Engineering
+                    </span>
+
+                    <h3>
+                        Angular Compiler Project
+                    </h3>
+
+                    <p>
+                        Custom compiler implementing lexical analysis,
+                        parsing, AST generation, semantic analysis,
+                        symbol tables, visitor pattern and code generation.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Lexer</span>
+                        <span>Parser</span>
+                        <span>AST</span>
+                        <span>Symbol Tables</span>
+                        <span>Visitor Pattern</span>
+                        <span>Code Generation</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Odoo -->
+
+            <article class="project-card scale-in">
+
+                <div class="project-image project-placeholder">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        ERP / Business Systems
+                    </span>
+
+                    <h3>
+                        Odoo ERP System Implementation
+                    </h3>
+
+                    <p>
+                        Customized Odoo modules, reports, forms and dashboards
+                        while supporting requirements analysis, workflow testing,
+                        access permissions and business process optimization.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Odoo</span>
+                        <span>PostgreSQL</span>
+                        <span>Python</span>
+                        <span>XML</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="education section-container fade-up">
+
+
+        <div class="section-heading">
+            <span>05</span>
+            <h2>Education</h2>
+        </div>
+
+        <div class="education-card scale-in">
+
+            <div class="education-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+
+                <span class="timeline-date">
+                    2026
+                </span>
+
+                <h3>
+                    Bachelor's Degree in Information Technology Engineering
+                </h3>
+
+                <p>
+                    Damascus University
+                </p>
+
+                <p>
+                    <strong>Major:</strong> Software Engineering
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact section-container fade-up">
+
+
+        <div class="section-heading">
+            <span>06</span>
+            <h2>Let's Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-text">
+
+                <h3>
+                    Have a project or opportunity?
+                </h3>
+
+                <p>
+                    I'm open to backend development opportunities,
+                    software engineering roles, and interesting
+                    projects where I can contribute to building
+                    reliable software systems.
+                </p>
+
+            </div>
+
+            <div class="contact-info">
+
+                <a href="mailto:bilalallaham75@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <small>Email</small>
+                        bilalallaham75@gmail.com
+                    </span>
+                </a>
+
+                <a href="tel:+963935431809" class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <small>Phone</small>
+                        +963 935 431 809
+                    </span>
+                </a>
+
+                <a href="https://linkedin.com/in/bilal-allaham" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>
+                        <small>LinkedIn</small>
+                        linkedin.com/in/bilal-allaham
+                    </span>
+                </a>
+
+                <a href="https://github.com/Bilal-Al-Laham" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>
+                        <small>GitHub</small>
+                        github.com/Bilal-Al-Laham
+                    </span>
+                </a>
+
+                <a href="https://gitlab.com/Bilal_Allaham" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <i class="fa-brands fa-gitlab"></i>
+                    <span>
+                        <small>GitLab</small>
+                        gitlab.com/Bilal_Allaham
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+        <p>
+            © 2026 Bilal Al-Laham · Software Engineer & Backend Developer
         </p>
-        <a href="cv\Bilal_Al_Laham-CV.pdf" download class="cv-btn scale-in">
-            <i class="fa-solid fa-download"></i> Download CV
-        </a>
-        
-        <a href="hr.html" class="cv-btn scale-in">HR Version</a>
-    </div>
-</header>
 
-<!-- ABOUT / SUMMARY -->
-<section id="about" class="about fade-up">
-    <h2>Professional Summary</h2>
-    <p>
-        Junior Laravel Developer with over 1 year of experience in backend development,
-        RESTful API design, and database optimization. Proficient in Laravel, PHP,
-        and MySQL, with hands-on experience in Bootstrap, jQuery, and AJAX.
-        Passionate about writing clean, scalable, and maintainable code following
-        SOLID principles and best practices. Successfully developed and deployed
-        multiple management systems improving workflow efficiency.
-    </p>
-</section>
 
-<!-- EDUCATION -->
-<section id="education" class="timeline fade-up">
-    <h2>Education</h2>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Bachelor's Degree in Information Technology Engineering</h3>
-            <p>Damascus University | 2021 – 2026 (Fourth Year)</p>
-            <p><strong>Specialization:</strong> Software Engineering</p>
-        </div>
-    </div>
-</section>
+    </footer>
 
-<!-- SKILLS -->
-<section id="skills" class="timeline fade-up">
-    <h2>Technical Skills</h2>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Backend</h3>
-            <p>Laravel, PHP, REST API, MVC, Blade</p>
-        </div>
-    </div>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Database</h3>
-            <p>MySQL, Optimization, Design</p>
-        </div>
-    </div>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Frontend</h3>
-            <p>JavaScript, jQuery, AJAX, Bootstrap</p>
-        </div>
-    </div>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Version Control</h3>
-            <p>Git, GitHub</p>
-        </div>
-    </div>
-</section>
+    <script src="script.js"></script>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="timeline fade-up">
-    <h2>Experience</h2>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Laravel Backend Developer – JoyBox</h3>
-            <span>May 2025 – Present</span>
-            <p>Backend development for QA Laboratory Systems (Zahi, Aalamy, Maqayees), REST APIs, database optimization, and workflow automation.</p>
-        </div>
-    </div>
-    <div class="timeline-item scale-in">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Laravel Developer – Freelance</h3>
-            <span>September 2025</span>
-            <p>Electronic payment systems with PayPal & Mollie, product management, cart, and responsive UI.</p>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects fade-up">
-    <h2>Projects</h2>
-    <div class="project-card scale-in">
-        <img src="images/project1.png" alt="Events Management">
-        <div>
-            <h3>Events Management System</h3>
-            <p>Event booking, budgets, vendors, and role management.</p>
-            <a href="https://github.com/Bilal-Al-Laham/Events_Management_System.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-        </div>
-    </div>
-    <div class="project-card scale-in">
-        <img src="images/project2.png" alt="School Management">
-        <div>
-            <h3>School Management System</h3>
-            <p>Students, subjects, exams, scheduling, and fees management.</p>
-            <a href="https://github.com/Bilal-Al-Laham/Schools_Management_System.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact fade-up">
-    <h2>Contact</h2>
-    <div class="contact-info scale-in">
-        <p><i class="fa-solid fa-location-dot"></i> Damascus, Syria</p>
-        <p><i class="fa-solid fa-envelope"></i> bilalallaham75@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +963 935 431 809</p>
-        <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/bilal-allaham" target="_blank">LinkedIn</a></p>
-        <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Bilal-Al-Laham" target="_blank">GitHub</a></p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Bilal Allaham</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
+
 </html>
